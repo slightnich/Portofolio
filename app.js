@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'pubilc/views', 'index.html'));
 });
 
-router.get('/version', async (req, res) => {
+app.get('/version', async (req, res) => {
   try {
     var json = {
           status: true,
