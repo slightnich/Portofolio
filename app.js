@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-global.creator = "@nexon.js – Kens Ransyah"
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -16,23 +15,20 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'pubilc', 'index.html'));
 });
 
-app.get('/version', async (req, res) => {
+app.get('/p', async (req, res) => {
   try {
     var json = {
+          creator: "Kens Ransyah"
           status: true,
-          data: {
-            _id: "prime.5.2.73",
-            version: "5.2.73", // update version
-            commit: "feat: Button && List", // views
-            url: "https://github.com/KensBot/nexon-bot/commit/287ff9037354fb25794308b70d57b862bf3e8719", //url link
-            type: "prime", //types version
-            at: 1714569754341,
-          },
+          msg: "Pemula om🙃"
         }
     res.json(json)
   } catch (error) {
     console.error(error);
-    res.json({creator: global.creator})
+    res.json({
+      creator: "Kens Ransyah",
+      status: false
+    })
   }
 });
 
