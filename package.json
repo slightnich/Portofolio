@@ -1,14 +1,14 @@
 {
-  "name": "nexon-music",
+  "name": "nexon",
   "version": "1.0.0",
-  "description": "Nexon Music App",
+  "description": "Portofolio With Nexon",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [
-    "spotify", 
-    "nexon-music", 
+    "portofolio", 
+    "portofolio-nexon", 
     "nexon", 
     "Kens Ransyah"
   ],
